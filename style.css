@@ -5,18 +5,32 @@
 
 body{
     font-family: "Gaegu", sans-serif;
+    color: #4f4f4f;
+    background: linear-gradient(40deg, antiquewhite, #f7dbbc);
 }
 
-.title h1{
+header{
     text-align: center;
-    font-size: 80px;
+    padding-top: 20%;
 }
+
+h1{
+    font-size: 80px;
+    text-align: center;
+}
+
+.fixed-bottom{
+    text-align: center;
+    vertical-align: bottom;
+}
+
 nav{
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     font-size: 20px;
     font-weight: 600;
+    position: fixed;
 }
 
 nav ul{
@@ -26,7 +40,6 @@ nav ul{
 }
 
 nav li{
-    color: black;
     list-style-type: none;
     font-size: 20px;
     font-weight: 700;
@@ -35,48 +48,29 @@ nav li{
     
 }
 
-.resize{
-    -webkit-animation: oscillate1 25s ease-in-out infinite;
-    animation: oscillate1 25s ease-in-out infinite;
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
+.btn-primary {
+    background-color: #dcd7fa!important;
+    border-color: #dcd7fa !important;
+    color: #4f4f4f !important;
 }
 
-.shadow{
-    height: 10px;
-    width: 100px;
-    background-color: #4f4f4f;
-    border-radius: 50%;
-    margin-top: 0;
-    padding-top: 0;
-    display: block;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #bebae8 !important;
+    border-color: #bebae8!important;
+    
 }
 
-.p2:hover{
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); 
-}
 a:link{
-    color: black;
+    color: #4f4f4f;
     text-decoration: none;
     }
 
 a:visited{
-    color: black;
+    color: #4f4f4f;
     text-decoration: none;   
     }
 
-a:hover{
-    display: inline-block;
+.nav-link:hover{
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -91,24 +85,51 @@ a:hover{
 
 .container-fluid{
     padding-top: 40px;
-/*
-    background-color: #50c6c0;
-*/
+    height: 100vh;
 
 }
 
-#home, #what-you-need, #brew, #ferment, #bottle{
+#home{
+/*
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     overflow: auto;
+*/
+}
+.ingred:hover{
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);  
+}
+
+.align-bottom{
+    padding-top: 60%;
+}
+
+.scroll-button{
+    position: relative;
+    vertical-align: bottom;
 }
 
 #home{
-    
-    background-image: repeating-linear-gradient( 0deg,transparent,#CCC 0,transparent 3px,transparent 10%), repeating-linear-gradient(-90deg,transparent,#CCC 0,transparent 3px,transparent 10%);
-    background-image: url("assets/makeyouown-41.svg");
+    background-image: url("assets/makeyouown-41.svg")!important;
     background-size: cover;
+
+}
+
+#home, #what-you-need, #brew, #ferment, #bottle{
+    height: 100vh;
+    background-image: url(assets/wooltexture.png);
+    background-size: repeat;
+    
 }

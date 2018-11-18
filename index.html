@@ -4,70 +4,105 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- My CSS -->
+
+        <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="./style.css">
+
+        <!-- js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="scrolling-nav.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Kombucha</title>
     </head>
-    
+
     <body> 
-        
-        <div id="home">
-        
-            <div class=container-fluid>
-            
-                <div class="row">
-                <div class="col-3">
-                    <nav class="nav flex-column">
-                        <a class="nav-link active" href=#home>Home</a>
-                        <a class="nav-link" href=#what-you-need>What you need</a>
-                        <a class="nav-link" href=#brew>Brew tea</a>
-                        <a class="nav-link" href=#ferment>Ferment</a>
-                        <a class="nav-link" href=#bottle>Bottle</a>
-                    </nav>
-                </div>
-                
 
-
-                
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-12 title"><h1>make your own</h1></div>
-                    <div class="col-md-12 title"><h1>kombucha</h1></div>
-                                
-
-                    </div>
-                </div>    
-                    
-            
-
+        <!--nav bar-->
+        <div class="row">
+            <div class="col-3">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href=#home>Home</a>
+                    <a class="nav-link" href=#what-you-need>What you need</a>
+                    <a class="nav-link" href=#brew>Brew tea</a>
+                    <a class="nav-link" href=#ferment>Ferment</a>
+                    <a class="nav-link" href=#bottle>Bottle</a>
+                </nav>
             </div>
+        </div>
 
-        
-        <div id="what-you-need"> What you need section
-        </div>
-        
-        <div id="brew"> Brew your tea section
-        </div>
-        
-        <div id="ferment"> Ferment section
-        </div>
-        
-        <div id="bottle"> Bottle section
-        </div>
+        <section id="home">
+
+            <div class=container-fluid>
+
+                <!--title-->
+                <header>
+                    <div class="col-md-12"><h1>make your own</h1></div>
+                    <div class="col-md-12"><h1>kombucha</h1></div>
+
+                </header> 
+                <!--scroll button-->
+                <div class="row justify-content-center scroll-button">
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href=#what-you-need><h3>learn more</h3></a>
+                </div>
+
+
+            </div>   
+
+        </section>
+
+
+        <section id="what-you-need">
+            <div class=container-fluid>
+                <!--title-->
+                <div class="row justify-content-center">
+                    <h1>what you need</h1>
+
+
+                </div>    
             
-        </div>      
-  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+                <!--items-->
+                <div class="row justify-content-center">
+                    <div class=col-md-2>
+                        <div class="ingred"><img src="assets/makeyouown-09.svg"><h2 class="text-center">1 gal jar</h2></div>
+                    </div>
+                    <div class=col-md-2>
+                        <div class="ingred"><img class="align-bottom" src="assets/makeyouown-10.svg"><h2 class="text-center">1 SCOBY</h2></div>
+                    </div>
+                    <div class=col-md-2>
+                        <div class="ingred"><img class="align-bottom" src="assets/makeyouown-11.svg"><h2 class="text-center">black tea</h2></div>
+                    </div>
+                    <div class=col-md-2>
+                        <div class="ingred"><img class="align-bottom" src="assets/makeyouown-12.svg"><h2 class="text-center">1 cup white cane sugar</h2></div>
+                    </div>
+                    <div class=col-md-2>
+                        <div class="ingred"><img class="align-bottom" src="assets/makeyouown-13.svg"><h2 class="text-center">12 cups filtered water</h2></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brew"> Brew your tea section
+        </section>
+
+        <section id="ferment"> Ferment section
+        </section>
+
+        <section id="bottle"> Bottle section
+        </section>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>
