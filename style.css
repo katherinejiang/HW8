@@ -1,23 +1,46 @@
 @font-face{
-    font-family: "Shaky Hand Some Comic";
+    font-family: "Shaky";
     src: url("assets/fonts/Shaky Hand Some Comic.otf") format("opentype");
 }
 
+@font-face{
+    font-family: "Westfalia";
+    src: url("assets/fonts/Westfalia-Regular.otf") format("opentype");
+}
+
+@font-face{
+    font-family: "Odachi";
+    src: url("assets/fonts/Odachi.otf") format("opentype");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: "Gaegu", sans-serif;
-    color: #4f4f4f;
+    font-family: "Shaky", sans-serif;
+    letter-spacing: 2px;
     background: linear-gradient(40deg, antiquewhite, #f7dbbc);
 }
 
+
 header{
     text-align: center;
-    padding-top: 20%;
+    margin-top: 18%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 h1{
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
+    font-family: "shaky", sans-serif;
+    font-weight: 1000;
+    text-shadow: 2px 3px #4f4f4f;
+    color: white;
 }
+
+
 
 .fixed-bottom{
     text-align: center;
@@ -28,9 +51,12 @@ nav{
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 800;
     position: fixed;
+    z-index: 100;
+    text-shadow: 2px 1px #4f4f4f;
+    
 }
 
 nav ul{
@@ -44,29 +70,37 @@ nav li{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
-    padding: 0;
-    
+    padding: 0;   
+}
+
+h3{
+    margin: 0;
+    font-size: 24px;
+
 }
 
 .btn-primary {
-    background-color: #dcd7fa!important;
-    border-color: #dcd7fa !important;
+    background-color: white! important;
+    border-color: white !important;
+    box-shadow: 3px 2px #4f4f4f;
     color: #4f4f4f !important;
+    padding: .425rem .825rem;
+
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: #bebae8 !important;
-    border-color: #bebae8!important;
+    background-color: #f9c075 !important;
+    border-color: #f9c075!important;
     
 }
 
 a:link{
-    color: #4f4f4f;
+    color: white;
     text-decoration: none;
     }
 
 a:visited{
-    color: #4f4f4f;
+    color: white;
     text-decoration: none;   
     }
 
@@ -86,19 +120,17 @@ a:visited{
 .container-fluid{
     padding-top: 40px;
     height: 100vh;
-
+    position: relative;
 }
 
-#home{
-/*
-    position: fixed;
-    top: 0;
-    left: 0;
+.continue-btn{
+    position: absolute;
     bottom: 0;
-    right: 0;
-    overflow: auto;
-*/
+    align-content: center;
+    height: 8%;
+    margin: 0;
 }
+
 .ingred:hover{
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -118,18 +150,17 @@ a:visited{
 
 .scroll-button{
     position: relative;
-    vertical-align: bottom;
+    padding-top: 5%;
 }
+
 
 #home{
-    background-image: url("assets/makeyouown-41.svg")!important;
+    background-image: url("assets/kombucha-05.svg");
     background-size: cover;
-
 }
 
-#home, #what-you-need, #brew, #ferment, #bottle{
+#what-you-need, #brew, #ferment, #bottle{
     height: 100vh;
-    background-image: url(assets/wooltexture.png);
-    background-size: repeat;
-    
+    background-image: url("assets/stuccotexture.png");
+    background-size: repeat;   
 }
