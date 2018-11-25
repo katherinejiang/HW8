@@ -133,6 +133,10 @@ a:visited{
 }
 */
 
+.fixed-bottom{
+    position: absolute;
+}
+
 .start-button{
     position: relative;
     padding-top: 3%;
@@ -140,7 +144,12 @@ a:visited{
 
 .scroll-up{
     vertical-align: top;
+    color: #4f4f4f;
 }
+
+.scroll-down{
+    padding-top: 0%;
+}  
 
 .closed-jar1{
     position: absolute;
@@ -155,6 +164,11 @@ a:visited{
     z-index: 2;
 }
 
+.fixed-row-bottom { 
+    position: sticky; 
+    bottom: 0;
+}
+
 .bottle{
     position: absolute;
 }
@@ -162,7 +176,12 @@ a:visited{
 
 #home{
     background-image: url("assets/kombucha-05.svg");
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 100vh; 
+    width: 100%;
+
 }
 
 #what-you-need, #brew, #ferment, #bottle{
@@ -235,26 +254,55 @@ a:visited{
 }
 */
 
-.scroll-down{
-    padding-top: 0%;
-}  
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+/* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (min-width: 0px) and (max-width: 575.98px) {
+    h1{
+        font-size: 3rem;  
+    }
+    h2, h3{
+        font-size: 1rem;
+    }
+    header{
+        padding-top: 10%;
+    }
+    .title{
+        padding-top: 10%;
+    }
+    .ingred{
+        padding-top: 50%;
+    }
+    .start-button{
+        padding-top: 30%;
+    }
+    .scroll-down{
+        padding-top: 50%;
+    }
+    .pot, .tea, .sugar, .thermometer{
+        padding-top: 30%;
+    }
+    .jar{
+        padding-top: 20%;
+    }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {   
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    
+    h2{
+        font-size: 12px;
+    }
 }
 
-// Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 }
 
-// Large devices (desktops, 992px and up)
+/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 }
 
-// Extra large devices (large desktops, 1200px and up)
+/*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 }

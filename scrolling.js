@@ -6,18 +6,18 @@ $( document ).ready(function() {
 //When .toggle() btn is clicked the div should appear and disappear
 $("#stepOne").click(function() {
     $(".tea").removeClass("d-none");
-    $(".tea").animate({left: "+=290"}, 1200);
+    $(".tea").animate({left: "+=20em"}, 1200);
     $(".tea").fadeOut("slow", function(){
         $(".sugar").removeClass("d-none");
-        $(".sugar").animate({left: "+=240"}, 1200);
+        $(".sugar").animate({left: "+=15em"}, 1200);
         $(".sugar").fadeOut("slow", function(){
             $(".pot").attr('src','assets/kombucha-12.svg');
             $(".tea").addClass("d-none");
             $(".tea").fadeIn();
-            $(".tea").animate({left: "-=290"}, 1); 
+            $(".tea").animate({left: "-=20em"}, 1); 
             $(".sugar").addClass("d-none");
             $(".sugar").fadeIn();
-            $(".sugar").animate({left: "-=240"}, 1); 
+            $(".sugar").animate({left: "-=15em"}, 1); 
         });
     });  
 });
@@ -60,6 +60,7 @@ $("#stepTwo").click(function(){
 $("#stepThree").click(function() {
     var count=0;
     $(".time").addClass("d-none"); 
+    $(".cover").addClass("d-none"); 
     $(".jar").attr('src', 'assets/kombucha-06.svg');
     $(".glass").removeClass("d-none");
     $(".glass").animate({left: "+=350"}, 1200);
