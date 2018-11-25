@@ -59,6 +59,7 @@ $("#stepTwo").click(function(){
     
 $("#stepThree").click(function() {
     var count=0;
+    $(".time").addClass("d-none"); 
     $(".jar").attr('src', 'assets/kombucha-06.svg');
     $(".glass").removeClass("d-none");
     $(".glass").animate({left: "+=350"}, 1200);
@@ -100,8 +101,23 @@ $("#stepFour").click(function() {
 $("#stepFive").click(function() {
     $('.closed-jar1').attr('src', 'assets/kombucha-27.svg');
     $('.closed-jar1').css("z-index",2);
-    var ele = $(".closed-jar1").clone().css({position:"absolute","z-index":"1"}).attr("src","assets/kombucha-26.svg");
+    var ele = $(".closed-jar1").clone().css({position:"absolute","z-index":"1"}).attr("src","assets/kombucha-28.svg");
     $('.closed-jar1').after(ele).fadeOut('slow');
+});
+    
+$("#stepSix").click(function() {
+    $('.closed-jar1').attr('src', 'assets/kombucha-28.svg');
+    $('.bottle').removeClass('d-none');
+    $('.closed-jar1').animate({left: "-=350"}, 1400, function(){
+        $('.closed-jar1').fadeOut('slow');
+        $('.bottle').attr('src', 'assets/kombucha-30.svg', function(){
+//          $('.closed-jar1').addClass('d-none');
+            $('.closed-jar1').fadeIn();
+            $('.closed-jar1').animate({left: "+=350"}, 1400);
+            $('bottle').effect('shake');
+        });
+
+    });
 });
     
 });
