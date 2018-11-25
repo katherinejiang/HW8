@@ -17,22 +17,26 @@ html{
     scroll-behavior: smooth;
 }
 
+.brew-buttons{
+    margin-top: 2%;
+}
+.title{
+    margin-top: 2%;
+}
 body{
     font-family: "Shaky", sans-serif;
     letter-spacing: 2px;
-    background: linear-gradient(40deg, antiquewhite, #f7dbbc);
+    background: linear-gradient(40deg, antiquewhite, #f8d7a5);
 }
 
 
 header{
-    text-align: center;
-    margin-top: 18%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    align-items: center;
+    margin-top: 20%;
 }
 
 h1{
-    font-size: 100px;
+    font-size: 96px;
     text-align: center;
     font-family: "shaky", sans-serif;
     font-weight: 1000;
@@ -40,43 +44,24 @@ h1{
     color: white;
 }
 
-
-
 .fixed-bottom{
     text-align: center;
     vertical-align: bottom;
 }
 
 nav{
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    font-weight: 800;
-    position: fixed;
-    z-index: 100;
-    text-shadow: 2px 1px #4f4f4f;
-    
+    font-size: 1.3em;
+
 }
 
-nav ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-nav li{
-    list-style-type: none;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding: 0;   
+.nav-link, .nav-item{
+    padding-right: 1%;
+    white-space: nowrap;
 }
 
 h3{
     margin: 0;
     font-size: 24px;
-
 }
 
 .btn-primary {
@@ -85,13 +70,11 @@ h3{
     box-shadow: 3px 2px #4f4f4f;
     color: #4f4f4f !important;
     padding: .425rem .825rem;
-
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background-color: #f9c075 !important;
-    border-color: #f9c075!important;
-    
+    border-color: #f9c075!important;   
 }
 
 a:link{
@@ -144,13 +127,32 @@ a:visited{
     transform: scale(1.1);  
 }
 
+/*
 .align-bottom{
-    padding-top: 60%;
+    padding-top: 42%;
+}
+*/
+
+.start-button{
+    position: relative;
+    padding-top: 3%;
 }
 
-.scroll-button{
-    position: relative;
-    padding-top: 5%;
+.scroll-up{
+    vertical-align: top;
+}
+
+.closed-jar1{
+    position: absolute;
+}
+
+{
+    position: absolute;  
+}
+
+.tea, .sugar, .thermometer, .glass, .scoby, .cover, .time{
+    position: absolute;
+    z-index: 2;
 }
 
 
@@ -162,5 +164,93 @@ a:visited{
 #what-you-need, #brew, #ferment, #bottle{
     height: 100vh;
     background-image: url("assets/stuccotexture.png");
-    background-size: repeat;   
+    background-size: contain; 
+}
+
+/*
+@media (min-width: 0px) and (max-width: 575.98px) {
+    header{
+        margin-top: 60%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .align-bottom{
+        padding-top: 0px;
+    }
+    .title{
+        margin-top: 20%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    header{
+        margin-top: 30%;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h3{
+        font-size: 16px;   
+    }
+    .align-bottom{
+    padding-top: 0px;
+    }
+
+}   
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    header{
+        margin-top: 30%;
+    }
+    h1{
+        font-size: 56px;
+    }
+    h3{
+        font-size: 24px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    header{
+        margin-top: 25%;
+    }
+    h1{
+        font-size: 80px;
+    }
+    h3{
+        font-size: 32px;
+    }
+
+    }
+}
+*/
+
+.scroll-down{
+    padding-top: 0%;
+}  
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {   
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
