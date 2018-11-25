@@ -33,28 +33,55 @@ $("#stepTwo").click(function(){
     })   
 });
     
-var count=0;   
+//var count=0;   
+//$("#stepThree").click(function() {
+//    count+=1;
+//    console.log(count);
+//    $(".time").addClass("d-none"); 
+//    $(".jar").attr('src','assets/kombucha-06.svg');
+//    $(".glass").removeClass("d-none");
+//    $(".glass").animate({left: "+=350"}, 1200);
+//    $(".glass").fadeOut("slow", function(){
+//        $(".jar").attr('src','assets/kombucha-21.svg');
+//        $(".scoby").removeClass("d-none");
+//        $(".scoby").animate({left: "+=310"}, 1200);
+//        $(".scoby").fadeOut("slow", function(){
+//            $(".jar").attr('src','assets/kombucha-22.svg');
+////            $(".glass").addClass("d-none");
+//            $(".glass").fadeIn();
+//            $(".glass").animate({left: "-=350"}, 1000); 
+////            $(".scoby").addClass("d-none");
+//            $(".scoby").fadeIn();
+//            $(".scoby").animate({left: "-=310"}, 1000); 
+//        });
+//    });    
+//});
+    
 $("#stepThree").click(function() {
-    count+=1;
-    console.log(count);
-    $(".time").addClass("d-none"); 
-    $(".jar").attr('src','assets/kombucha-06.svg');
+    var count=0;
+    $(".jar").attr('src', 'assets/kombucha-06.svg');
     $(".glass").removeClass("d-none");
     $(".glass").animate({left: "+=350"}, 1200);
     $(".glass").fadeOut("slow", function(){
-        $(".jar").attr('src','assets/kombucha-21.svg');
-        $(".scoby").removeClass("d-none");
-        $(".scoby").animate({left: "+=310"}, 1200);
+        if(count<1){
+            $(".jar").attr('src','assets/kombucha-21.svg');
+            $(".scoby").removeClass("d-none");
+            $(".scoby").animate({left: "+=310"}, 1200);
+            count+=1;
+        }
         $(".scoby").fadeOut("slow", function(){
-            $(".jar").attr('src','assets/kombucha-22.svg');
-//            $(".glass").addClass("d-none");
-            $(".glass").fadeIn();
-            $(".glass").animate({left: "-=350"}, 1000); 
-//            $(".scoby").addClass("d-none");
-            $(".scoby").fadeIn();
-            $(".scoby").animate({left: "-=310"}, 1000); 
+            if(count<2) {
+                $(".jar").attr('src','assets/kombucha-22.svg');
+                $(".glass").addClass("d-none");
+                $(".glass").fadeIn();
+                $(".glass").animate({left: "-=350"}, 1); 
+                $(".scoby").addClass("d-none");
+                $(".scoby").fadeIn();
+                $(".scoby").animate({left: "-=310"}, 1); 
+                count+=1;
+            }
         });
-    });    
+    });  
 });
     
 $("#stepFour").click(function() {
