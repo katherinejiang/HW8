@@ -20,6 +20,7 @@ html{
 .brew-buttons{
     margin-top: 2%;
 }
+
 .title{
     margin-top: 2%;
 }
@@ -36,12 +37,16 @@ header{
 }
 
 h1{
-    font-size: 96px;
+    font-size: 5rem;
     text-align: center;
     font-family: "shaky", sans-serif;
     font-weight: 1000;
     text-shadow: 2px 3px #4f4f4f;
     color: white;
+}
+
+h2, h3{
+    font-size: 1.8rem;
 }
 
 .fixed-bottom{
@@ -148,7 +153,6 @@ a:visited{
 }
 
 .scroll-down{
-    padding-top: 0%;
 }  
 
 .closed-jar1{
@@ -159,7 +163,7 @@ a:visited{
     position: absolute;  
 }
 
-.tea, .sugar, .thermometer, .glass, .scoby, .cover, .time{
+.tea, .sugar, .thermometer, .glass, .scoby, .cover, .time, .cover2{
     position: absolute;
     z-index: 2;
 }
@@ -173,7 +177,6 @@ a:visited{
     position: absolute;
 }
 
-
 #home{
     background-image: url("assets/kombucha-05.svg");
     background-repeat:no-repeat;
@@ -181,7 +184,6 @@ a:visited{
     background-position: center center;
     height: 100vh; 
     width: 100%;
-
 }
 
 #what-you-need, #brew, #ferment, #bottle{
@@ -278,6 +280,9 @@ a:visited{
     .scroll-down{
         padding-top: 50%;
     }
+    .brew-buttons{
+        margin-top: 7%;
+    }
     .pot, .tea, .sugar, .thermometer{
         padding-top: 30%;
     }
@@ -288,19 +293,107 @@ a:visited{
 
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-
-    
-    h2{
-        font-size: 12px;
+    h1{
+        font-size: 6rem;  
+    }
+    h2, h3{
+        font-size: 2.5rem;
+    }
+    header{
+        padding-top: 12%;
+    }
+    .nav-link{
+        font-size: 2.5rem;
+    }
+    .title{
+        padding-top: 10%;
+    }
+    .ingred{
+        padding-top: 50%;
+    }
+    .start-button{
+        padding-top: 30%;
+    }
+    .scroll-down{
+        padding-top: 30%;
+    }
+    .brew-buttons{
+        margin-top: 7%;
+    }
+    .brew-images{
+        margin-top: 50%;
+    }
+    .ferment-images{
+        margin-top: 20%;
     }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 6rem;  
+    }
+    h2, h3{
+        font-size: 2.1rem;
+    }
+    header{
+        padding-top: 12%;
+    }
+    .title{
+        padding-top: 4%;
+    }
+    .ingred{
+        padding-top: 50%;
+    }
+    .start-button{
+        padding-top: 30%;
+    }
+    .scroll-down{
+        padding-top: 10%;
+    }
+    .brew-buttons{
+        margin-top: 7%;
+    }
+    .brew-images{
+        margin-top: 15%;
+    }
+    .ferment-images{
+        margin-top: 20%;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 6rem;  
+    }
+    h2, h3{
+        font-size: 2.5rem;
+    }
+    header{
+        padding-top: 12%;
+    }
+    .title{
+        padding-top: 10%;
+    }
+    .ingred{
+        padding-top: 50%;
+    }
+    .start-button{
+        padding-top: 30%;
+    }
+    .scroll-down{
+        padding-top: 30%;
+    }
+    .brew-buttons{
+        margin-top: 7%;
+    }
+    .brew-images{
+        margin-top: 20%;
+    }
+    .ferment-images{
+        margin-top: 30%;
+    }
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/

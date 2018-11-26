@@ -28,7 +28,7 @@ $("#stepTwo").click(function(){
     $(".thermometer").fadeOut('slow', function(){
         $(".thermometer").addClass("d-none");
         $(".thermometer").fadeIn();
-        $(".thermometer").animate({left: '+=100', top: '-=150'}, 1); 
+        $(".thermometer").animate({left: '+=100', top: '-=130'}, 1); 
         
     })   
 });
