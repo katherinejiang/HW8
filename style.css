@@ -60,7 +60,6 @@ h3{
 
 nav{
     font-size: 1.3em;
-
 }
 
 .nav-link, .nav-item{
@@ -155,13 +154,11 @@ a:visited{
     position: absolute;
 }
 
-/*
 
 .tea, .sugar, .thermometer, .glass, .scoby, .cover, .time, .cover2{
     position: absolute;
     z-index: 2;
 }
-*/
 
 .fixed-row-bottom { 
     position: sticky; 
@@ -209,19 +206,13 @@ a:visited{
     .ingred{
         padding-top: 50%;
     }
-
-
     .brew-buttons{
         margin-top: 7%;
     }
     .pot, .tea, .sugar, .thermometer{
         padding-top: 30%;
     }
-/*
-    .jar{
-        padding-top: 20%;
-    }
-*/
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -240,12 +231,6 @@ a:visited{
     .title{
         padding-top: 1%;
     }
-
-/*
-    .ferment-images{
-        margin-top: 20%;
-    }
-*/
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -271,11 +256,7 @@ a:visited{
     .brew-images{
         margin-top: 15%;
     }
-/*
-    .ferment-images{
-        margin-top: 20%;
-    }
-*/
+
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -299,11 +280,7 @@ a:visited{
     .brew-images{
         margin-top: 20%;
     }
-/*
-    .ferment-images{
-        margin-top: 30%;
-    }
-*/
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -324,16 +301,10 @@ a:visited{
     justify-content: space-around;
     flex-direction: row;
     
-/*    height: calc(100vh - 48px);*/
 }
 
 .step-container{
     padding: 1%;
-/*
-    border-color: white;
-    border-width: medium;
-    border-style: solid;
-    border-radius: 10px;
-*/
+
 }
 
